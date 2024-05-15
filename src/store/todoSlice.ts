@@ -1,24 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-
-export interface ITodo {
-  id: number
-  title: string
-  delete: boolean
-}
-
-interface ITodosState {
-  allTodos: ITodo[]
-  deleteTodos: ITodo[]
-}
-
-interface IRootTodos {
-  todos: ITodosState
-}
-
-const initialState: ITodosState = {
-  allTodos: [],
-  deleteTodos: [],
-}
+import { IRootTodos, ITodo } from './ITodo.ts'
+import initialState from './initialTodos.ts'
 
 const todosSlice = createSlice({
   name: 'todos',

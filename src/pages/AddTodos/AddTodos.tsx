@@ -9,11 +9,11 @@ const AddTodos: React.FC = () => {
   const [inputValue, setInputValue] = useState('')
   const dispatch = useDispatch()
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    if (inputValue.trim()) {
-      dispatch(addTodo(inputValue))
+    if (inputValue) {
+      dispatch(addTodo(inputValue.trim()))
       setInputValue('')
     }
   }

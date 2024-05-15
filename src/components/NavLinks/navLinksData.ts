@@ -1,4 +1,4 @@
-import { INavData } from '../../interfaces/interfaces.tsx'
+import { INavData } from './INavData.ts'
 
 const navLinksData: INavData[] = [
   { name: 'Add todos', id: 4, to: '/' },
