@@ -1,0 +1,14 @@
+.btn {
+  font-size: 2rem;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100px;
+}
+
+@media (max-width: 450px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,33 @@
+.nav {
+  background-color: blue;
+  padding: 20px 10px;
+  font-size: 2rem;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+
+.containerOutlet {
+  flex: 1 1 auto;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
+  padding: 20px 20px;
+  color: white;
+  font-size: 2rem;
+}
+
+@media (max-width: 450px) {
+  .nav {
+    font-size: 1.5rem;
+  }
+}
